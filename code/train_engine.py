@@ -1,7 +1,6 @@
 # Imports
 import torch
 from torch import nn
-import tqdm
 from tqdm.auto import tqdm
 
 # Setup default device (for if device argument is not passed)

@@ -21,7 +21,7 @@ else:
   num_workers = os.cpu_count()
 
 # Setup path to a data folder
-data_path = Path("data/")
+data_path = Path("image_classifier_project/data/")
 image_path = data_path / "pizza_steak_sushi_20"
 
 # If the image folder doesn't exist, download it and prepare it..
@@ -88,10 +88,10 @@ model_1_results, model_1_save_dict = train_with_state_dict(model = model_1,
 # Save the model
 from model_saver_utils import save_model
 save_model(model_save_dict=model_0_save_dict,
-                      target_dir="models",
+                      target_dir="image_classifier_project/models",
                       model_name="image_classifier_model_0.pth")
 save_model(model_save_dict=model_1_save_dict,
-                      target_dir="models",
+                      target_dir="image_classifier_project/models",
                       model_name="image_clasifier_model_1.pth")
 
 # Print out the best model
